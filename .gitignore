@@ -1,0 +1,17 @@
+# Build files
+dist/
+node_modules/
+public/
+
+# Local development files
+.env
+.env.local
+.env.development.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Webstorm files
+.idea/
