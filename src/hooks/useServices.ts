@@ -9,7 +9,7 @@ export interface Service {
     image: string;
 }
 
-const API_URL = "/services";
+const API_URL = "http://localhost:5149/api/Service/top-5-services";
 
 const useServices = () => {
     const [services, setServices] = useState<Service[]>([]);
@@ -23,7 +23,7 @@ const useServices = () => {
                 setServices(response.data);
                 setIsLoading(false);
             } catch (error) {
-                setError('Failed to fetch the services from the backend server');
+                setError('Failed to fetch the services from the backend server with the following error: ' + error);
                 setIsLoading(false);
             }
         };

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className="absolute bottom-0 left-0 w-full bg-gray-900 text-white py-4">
             <div className="container mx-auto text-center">
@@ -15,6 +15,4 @@ const Footer = () => {
             </div>
         </footer>
     )
-}
-
-export default Footer;
+};
