@@ -20,6 +20,11 @@ export const NavigationMenu = ({ isOpen, onClose }) => {
             description: 'Explore our range of professional services'
         },
         {
+          title: 'Projects',
+          path: '/projects',
+          description: 'Explore our range of professional and running projects'
+        },
+        {
             title: 'Contact',
             path: '/contact',
             description: 'Get in touch with our team'
@@ -34,9 +39,10 @@ export const NavigationMenu = ({ isOpen, onClose }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="fixed inset-0 bg-black z-40"
+                    className="fixed inset-0 z-40"
+                    style= {{ backgroundColor: "#3C4A58" }}
                 >
-                    <div className="container mx-auto px-8 py-24">
+                    <div className="container mx-40 mb-10 px-8 py-24">
                         <div className="grid gap-8">
                             {navLinks.map((link) => (
                                 <motion.div
